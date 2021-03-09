@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+
+	<!-- When ever we are using the annotation based configuration in spring 
+		using the @Component annotation, then the class name is used in the non-qualified 
+		and decapitalized manner EX : com.qa.demo.ClassName => will be used as just 
+		classname -->
+
+
+	<!-- In order to specify to spring that we are using the component based 
+		configuration, we need to use the following tag and specify the base package -->
+
+	<context:component-scan
+		base-package="com.qa.demo.spring_framework_basics"></context:component-scan>
+
+	<bean id="vehicle"
+		class="com.qa.demo.spring_framework_basics.Bike">
+	</bean>
+
+	<bean id="tyre" class="com.qa.demo.spring_framework_basics.Tyre">
+		<property name="tyreBrand" value="MRF"></property>
+	</bean>
+
+	<bean id="student"
+		class="com.qa.demo.spring_framework_basics.Student">
+
+		<property name="firstName" value="Rohan"></property>
+		<property name="lastName" value="Sharma"></property>
+		<property name="age" value="12"></property>
+		<property name="salary" value="12000"></property>
+
+	</bean>
+
+</beans>
