@@ -14,4 +14,17 @@ public class Apple implements MobilePhone{
 		return Integer.parseInt(number);
 	}
 
+	@Override
+	public String toString() {
+		return "Apple [mobNumber=" + mobNumber + "]";
+	}
+
+	public String getMobNumber() {
+		return mobNumber;
+	}
+
+	public void setMobNumber(String mobNumber) {
+		this.mobNumber = mobNumber;
+	}
+
 }

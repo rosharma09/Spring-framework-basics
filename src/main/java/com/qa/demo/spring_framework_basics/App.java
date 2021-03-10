@@ -39,6 +39,7 @@ public class App {
 		
 		
 		MobilePhone mPhn = (MobilePhone) context.getBean("mobile");
+		System.out.println(mPhn);
 		
 
 	}

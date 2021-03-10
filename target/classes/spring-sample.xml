@@ -39,4 +39,8 @@
 
 	</bean>
 
+	<bean id="mobile"
+		class="com.qa.demo.spring_framework_basics.Apple">
+		<property name="mobNumber" value="iphone 11"></property>
+	</bean>
 </beans>
