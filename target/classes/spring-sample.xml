@@ -41,6 +41,6 @@
 
 	<bean id="mobile"
 		class="com.qa.demo.spring_framework_basics.Apple">
-		<property name="mobNumber" value="iphone 11"></property>
+		<property name="mobNumber" value="iphone 12"></property>
 	</bean>
 </beans>
