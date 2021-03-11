@@ -42,5 +42,7 @@ public class App {
 
 		Employee e = (Employee) context.getBean("employee");
 		System.out.println(e);
+		
+	
 	}
 }

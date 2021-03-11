@@ -21,12 +21,10 @@
 	<context:component-scan
 		base-package="com.qa.demo.spring_framework_basics"></context:component-scan>
 
-	<bean id="vehicle"
-		class="com.qa.demo.spring_framework_basics.Bike">
-	</bean>
+	<bean id="vehicle" class="com.qa.demo.spring_framework_basics.Car"></bean>
 
 	<bean id="tyre" class="com.qa.demo.spring_framework_basics.Tyre">
-		<property name="tyreBrand" value="MRF"></property>
+<!-- 		<property name="tyreBrand" value="MRF"></property> -->
 	</bean>
 
 	<bean id="student"
@@ -49,15 +47,16 @@
 
 	</bean>
 
-	<bean id="employee" class="com.qa.demo.spring_framework_basics.Employee">
+	<bean id="employee"
+		class="com.qa.demo.spring_framework_basics.Employee">
 
 		<!-- In order to use pass the value to the construct of the class, we can 
 			use the constructor-arg tag -->
-			
-			<constructor-arg value = "Rohan"></constructor-arg>
-			<constructor-arg value = "CSE"></constructor-arg>
-			<constructor-arg value = "23"></constructor-arg>
-			<constructor-arg value = "1"></constructor-arg>
+
+		<constructor-arg value="Rohan"></constructor-arg>
+		<constructor-arg value="CSE"></constructor-arg>
+		<constructor-arg value="23"></constructor-arg>
+		<constructor-arg value="1"></constructor-arg>
 
 	</bean>
 </beans>
