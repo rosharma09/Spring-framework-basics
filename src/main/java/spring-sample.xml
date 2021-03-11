@@ -42,5 +42,22 @@
 	<bean id="mobile"
 		class="com.qa.demo.spring_framework_basics.Apple">
 		<property name="mobNumber" value="iphone 12"></property>
+
+		<!-- We can use the property tag to pass the value to the fields define, 
+			in the case of property tag usage we need to make sure that the setter method 
+			for the feild is defined -->
+
+	</bean>
+
+	<bean id="employee" class="com.qa.demo.spring_framework_basics.Employee">
+
+		<!-- In order to use pass the value to the construct of the class, we can 
+			use the constructor-arg tag -->
+			
+			<constructor-arg value = "Rohan"></constructor-arg>
+			<constructor-arg value = "CSE"></constructor-arg>
+			<constructor-arg value = "23"></constructor-arg>
+			<constructor-arg value = "1"></constructor-arg>
+
 	</bean>
 </beans>

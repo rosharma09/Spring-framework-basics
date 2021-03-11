@@ -36,11 +36,11 @@ public class App {
 
 		Student stud = (Student) context.getBean("student");
 		System.out.println(stud);
-		
-		
+
 		MobilePhone mPhn = (MobilePhone) context.getBean("mobile");
 		System.out.println(mPhn);
-		
 
+		Employee e = (Employee) context.getBean("employee");
+		System.out.println(e);
 	}
 }
